@@ -1,0 +1,64 @@
+import config.DependenciesManager
+
+apply plugin: 'com.android.library'
+apply from: "../basic.gradle"
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    api(DependenciesManager.jdk8)
+    api(DependenciesManager.coroutines.core)
+    api(DependenciesManager.coroutines.android)
+
+    api(DependenciesManager.viewpager2)
+    api(DependenciesManager.paging)
+    api(DependenciesManager.legacy)
+    api(DependenciesManager.constraintlayout)
+    api(DependenciesManager.appcompat)
+    api(DependenciesManager.coreKtx)
+    api(DependenciesManager.multidex)
+    api(DependenciesManager.material)
+
+    /**
+     * lifecycle相关包括liveData、viewModel
+     */
+    api(DependenciesManager.lifecycle.extensions)
+    api(DependenciesManager.lifecycle.liveDataKtx)
+    api(DependenciesManager.lifecycle.viewModelKtx)
+
+    /**
+     * navigation相关
+     */
+    api(DependenciesManager.navigation.fragmentKtx)
+    api(DependenciesManager.navigation.uiKtx)
+
+    api(DependenciesManager.room.roomRuntime)
+    api(DependenciesManager.room.roomKtx)
+    //kapt(DependenciesManager.room.roomCompiler)
+
+    api(DependenciesManager.okhttp)
+    api(DependenciesManager.rxjava)
+    api(DependenciesManager.rxAndroid)
+    api(DependenciesManager.cookieJar)
+    api(DependenciesManager.baseQuickAdapter)
+    api(DependenciesManager.eventBus)
+    api(DependenciesManager.aviUi)
+    api(DependenciesManager.banner)
+    api(DependenciesManager.magic)
+    api(DependenciesManager.easypermissions)
+    api(DependenciesManager.labelsView)
+    api(DependenciesManager.rxPermission)
+    api(DependenciesManager.shadow)
+
+    api(DependenciesManager.retrofit.retrofit)
+    api(DependenciesManager.retrofit.scalars)
+    api(DependenciesManager.retrofit.gson)
+
+    api(DependenciesManager.glide.glide)
+    api(DependenciesManager.glide.transformations)
+
+    api(DependenciesManager.smart.smart)
+    api(DependenciesManager.smart.head)
+
+
+}

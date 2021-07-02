@@ -1,16 +1,16 @@
-import config.Version
+import config.VersionManager
 
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion Version.compileSdkVersion
-    buildToolsVersion Version.buildToolsVersion
+    compileSdkVersion VersionManager.compileSdkVersion
+    buildToolsVersion VersionManager.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion Version.minSdkVersion
-        targetSdkVersion Version.targetSdkVersion
+        minSdkVersion VersionManager.minSdkVersion
+        targetSdkVersion VersionManager.targetSdkVersion
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_8
             targetCompatibility JavaVersion.VERSION_1_8

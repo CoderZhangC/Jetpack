@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/main_fragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.zc.jetpack.ui.fragment.home.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+<!--        &lt;!&ndash;历史&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_history_fragment"-->
+<!--            app:destination="@+id/history_fragment" />-->
+
+<!--        &lt;!&ndash;播放&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_play_fragment"-->
+<!--            app:destination="@+id/play_fragment" />-->
+
+<!--        &lt;!&ndash;设置&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_set_fragment"-->
+<!--            app:destination="@+id/set_fragment" />-->
+
+<!--        &lt;!&ndash;搜索&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_search_fragment"-->
+<!--            app:destination="@+id/search_fragment" />-->
+
+<!--        &lt;!&ndash;web&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_web_fragment"-->
+<!--            app:destination="@+id/web_fragment" />-->
+
+<!--        &lt;!&ndash;登陆&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_login_fragment"-->
+<!--            app:destination="@+id/login_fragment" />-->
+
+<!--        &lt;!&ndash;体系列表&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_system_list_fragment"-->
+<!--            app:destination="@+id/system_list_fragment" />-->
+
+<!--        &lt;!&ndash;发布文章&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_publish_fragment"-->
+<!--            app:destination="@+id/publish_fragment" />-->
+
+<!--        &lt;!&ndash;排名&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_rank_fragment"-->
+<!--            app:destination="@+id/rank_fragment" />-->
+
+<!--        &lt;!&ndash;我的文章&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_my_article_fragment"-->
+<!--            app:destination="@+id/my_article_fragment" />-->
+<!--        &lt;!&ndash;收藏&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_collect_fragment"-->
+<!--            app:destination="@+id/collect_fragment" />-->
+<!--        &lt;!&ndash;积分&ndash;&gt;-->
+<!--        <action-->
+<!--            android:id="@+id/action_main_fragment_to_integral_fragment"-->
+<!--            app:destination="@+id/integral_fragment" />-->
+    </fragment>
+
+</navigation>

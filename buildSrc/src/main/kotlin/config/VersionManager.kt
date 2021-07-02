@@ -5,7 +5,7 @@ package config
  * @date 2021/7/1
  * desc:
  */
-object Version {
+object VersionManager {
 
     const val kotlin_version = "1.5.0"
     const val compileSdkVersion = 30

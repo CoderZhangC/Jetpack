@@ -1,7 +1,7 @@
-import config.AndroidDependencies
-
+import config.DependenciesManager
 apply plugin: 'com.android.application'
 apply from : "../basic.gradle"
+apply plugin: 'kotlin-android'
 
 android {
 
@@ -23,13 +23,10 @@ android {
 }
 
 dependencies {
-
-    implementation AndroidDependencies.kotlin
-    implementation AndroidDependencies.core_ktx
-    implementation AndroidDependencies.appcompat
-    implementation AndroidDependencies.material
-    implementation AndroidDependencies.constraintlayout
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    api project(":base")
 }
